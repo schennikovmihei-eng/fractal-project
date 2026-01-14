@@ -4,11 +4,11 @@
 #include "image.h"
 
 struct fractal_params {
-        double xmin;
-        double xmax;
-        double ymin;
-        double ymax;
-        int max_iter;
+  double xmin;
+  double xmax;
+  double ymin;
+  double ymax;
+  int max_iter;
 };
 
 void mandelbrot_fractal(image_p picture, const struct fractal_params *params);
