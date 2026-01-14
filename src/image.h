@@ -21,8 +21,8 @@ void free_image(image_p img);
 
 pixel_data get_pixel(const_image_p picture, pixel_coord x, pixel_coord y);
 void set_pixel(image_p picture, pixel_coord x, pixel_coord y, pixel_data value);
-
+powershell -Command "Get-Content src\fractal.h | Select-String '`t'"
 int save_pgm(const_image_p picture, const char *filename);
 int save_pgm_binary(const_image_p picture, const char *filename);
 
-#endif
+#endif /* IMAGE_H */
