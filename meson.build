@@ -30,8 +30,8 @@ executable('fractal', src,
   install: true
 )
 
-executable('fractal_test', test_src,
+test_exe = executable('fractal_test', test_src,
   dependencies: [m_dep]
 )
 
-test('basic_test', executable('fractal_test', test_src, dependencies: [m_dep]))
+test('basic_test', test_exe)

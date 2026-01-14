@@ -12,7 +12,7 @@ struct fractal_params {
 };
 
 void mandelbrot_fractal(image_p picture, const struct fractal_params *params);
-void julia_fractal(image_p picture, double cx, double cy, 
+void julia_fractal(image_p picture, double cx, double cy,
                    const struct fractal_params *params);
 
-#endif /* FRACTAL_H */
+#endif
